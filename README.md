@@ -6,7 +6,7 @@ Welcome to my personal portfolio, where you will be able to see all my projects
 
 ## 🛠️ Built With
 
-- First project Log in/sign in form with back end logic and sql database stockage
+- First project Log in/sign in form with back end logic, sql database stockage and password hashing system
 
 | Technology | Usage |
 |------------|-------|
@@ -20,7 +20,7 @@ Welcome to my personal portfolio, where you will be able to see all my projects
 
 ```
 Portfolio/
-└── Back-end/         
+└── !final/         
 ```
 
 ---
