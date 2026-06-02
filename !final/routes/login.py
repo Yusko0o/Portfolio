@@ -1,7 +1,11 @@
 from flask import Blueprint, render_template, request
 import sqlite3
+import hashlib as h
+import os
 
 auth = Blueprint("auth", __name__)
+
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "users.db")
 
 @auth.route("/log_in", methods=["GET"])
 def login_page():
@@ -13,7 +17,9 @@ def login():
         email = request.form.get("email")
         password = request.form.get("password")
 
-        connect = sqlite3.connect("users.db")
+        hashPassword = h.sha1(password.encode()).hexdigest()
+
+        connect = sqlite3.connect(DB_PATH)
         cursor= connect.cursor()
 
         cursor.execute(
@@ -27,7 +33,7 @@ def login():
         if not user:
             return "No account"
 
-        if user[0] == password:
+        if user[0] == hashPassword:
             return "You're logged in !"
         else:
             return "Incorrect !"
