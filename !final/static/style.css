@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
-    zoom: 1.5;
+    zoom: 1;
 }
 
 body {
@@ -8,19 +16,118 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f5f3ee;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main main {
+    background: #ffffff;
+    border: 1px solid #e8e5df;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    width: 360px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.06);
+}
+
+.main main::before {
+    content: 'Portfolio';
+    display: block;
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
+}
+
+.main main::after {
+    content: 'Sign in to continue';
+    display: block;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 2rem;
 }
 
 .main form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    border-radius: 30%;
+    gap: 10px;
+    border-radius: 0;
+}
+
+.main form p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
+    margin-top: -0.5rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    background: #f8f7f4;
+    border: 1px solid #e2dfd8;
+    border-radius: 10px;
+    color: #1a1a1a;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #aaa;
+    background: #fff;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #bbb;
+    font-size: 13px;
 }
 
 #buttonw {
-    display: flex;
-    align-self: center;
-    width: 50px;
-    height: 20px;
+    display: block;
+    align-self: unset;
+    width: 100%;
+    height: auto;
+    padding: 11px;
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+#buttonw:hover {
+    opacity: 0.82;
+}
+
+.main form a {
+    display: block;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.main form a:hover {
+    color: #1a1a1a;
 }
