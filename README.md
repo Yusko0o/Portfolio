@@ -6,7 +6,7 @@ Welcome to my personal portfolio, where you will be able to see all my projects
 
 ## 🛠️ Built With
 
-- First project Log in/sign in form with back end logic, sql database stockage and password hashing system
+- Log in/sign in form with back end logic, sql database stockage and password hashing system
 
 | Technology | Usage |
 |------------|-------|
@@ -27,9 +27,9 @@ Portfolio/
 
 ## ✨ Features
 
-- 🧑‍💻 About me section — background and profile
-- 📂 Projects showcase
-- 📬 Contact section
+- 🧑‍💻 Back-end project
+- 📂 Password hashing
+- 📬 discord : disappearzs
 - 🎨 Clean and responsive design
 
 ---
