@@ -6,11 +6,11 @@ Welcome to my personal portfolio, where you will be able to see all my projects
 
 ## 🛠️ Built With
 
-- Log in/sign in form with back end logic, sql database stockage and password hashing system
+- Log in/sign in form with back-end logic, sql database stockage and password hashing system
 
 | Technology | Usage |
 |------------|-------|
-| [Python] | Scripts & backend logic made from scratch|
+| [Python] | Scripts & backend logic|
 | [HTML] | Page structure made from scratch | 
 | [CSS] | Styling & layout made by AI |
 
